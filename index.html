@@ -1,0 +1,86 @@
+
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="C:\Users\18182\OneDrive\Desktop\projects\weatherapi\assets\style.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Weather Map</title>
+  </head>
+  
+  <body class="flex-column min-100-vh">
+    <header class="hero">
+      <h1 class="app-title"><i class="fab fa-"></i> Weather Dashboard</h1>
+    </header>
+  
+  
+    <main class="flex-row justify-space-between">
+      <div class="col-12 col-md-4">
+        <div class="card">
+          <h3 class="card-header text-uppercase">Search for a city </h3>
+          <div id="city-form" class="card-bod">
+            <label class="form-label" for="city"></label>
+            <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+            <button type="submit" class="btn">Search</button>
+          </div>
+        </div>
+<ul class="list-group history"></ul>
+      </div>
+  <!--           
+        <div class="card">
+          <h3 class="card-header text-uppercase">Search</h3>
+          <div id="language-buttons" class="card-body">
+            <button data-language="javascript" class="btn">City</button>
+            <button data-language="html" class="btn">Zip</button>
+            <button data-language="css" class="btn">State</button>
+          </div>
+        </div>
+      </div>
+    -->
+
+    <div class = grid-item-0>
+      <div class="col-12 col-md-8">
+        <h2 class="subtitle">Showing Weather for: <span id="city-search-term"></span></h2>
+        <div id="weather-container" class="list-group">
+        </div>
+      </div>
+      </div>
+
+      <div class="col-12 col-md-4" id = "results-list">
+        <div class="grid-item-1" id = "day">
+          <div>
+          <h3 class="card-header text-uppercase">5 Day Forecast: </h3>
+        </div>
+            <div class ="card-text" id ="card-text">
+              <ul id="5day"></ul>
+
+
+
+            </div>
+            
+        
+        </div>
+</div>  
+
+
+  
+    
+    
+  </div>
+
+
+  <div id="dateForecast"></div>
+
+
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <!--<script src="./assets/weather.js"></script>-->
+ <script src ="assets/weather.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+  </body>
+  
+  </html>
