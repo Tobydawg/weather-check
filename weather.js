@@ -30,7 +30,7 @@ function makeRow(searchValue) {
 
 // using the openweathermap api to print out the weather portion at the top right
 function searchWeather(searchValue) {
-  fetch("http://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=5b33eff3ff13a94af4b4710b78cc83bc&units=imperial").then(function(response){
+  fetch("https://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=5b33eff3ff13a94af4b4710b78cc83bc&units=imperial").then(function(response){
     return response.json();
   }).then(function(data) {
     console.log(data);
